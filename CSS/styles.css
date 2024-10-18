@@ -24,7 +24,9 @@ img {
 .nav{
     --bs-nav-link-color: #000000;
     --bs-nav-link-hover-color: #000000;
+    background-color: white;
 }
+
 
 .navbar-nav {
     --bs-nav-link-hover-color: rgba(0, 0, 0, 0.8);
@@ -53,6 +55,48 @@ img {
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 8vw;
     font-weight: bold;
+}
+
+.my-burger-menu:hover{
+    opacity: 1;
+}
+
+#home{
+    height: 100vh;
+}
+
+.d-flex{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my-home-text{
+    margin: 4rem 0 2rem 0;
+    width: 100%;
+}
+
+.fa-bars{
+    opacity: 0.75;
+}
+
+.fa-bars:hover {
+    opacity: 1;
+}
+
+
+
+section{
+    height: 100vh;
+    padding: 2em;
+}
+
+h1{
+    font-size: 10vw;
+    font-weight: bold;
+}
+
+.text-description-studio p{
+    font-size: 1.7rem;
 }
