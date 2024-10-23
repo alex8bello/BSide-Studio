@@ -90,6 +90,7 @@ h2{
 section{
     height: 100vh;
     padding: 2em;
+    margin-top: 3em;
 }
 
 h1{
@@ -97,6 +98,61 @@ h1{
     font-weight: bold;
 }
 
-.text-description-studio p{
+.text-description-about p{
     font-size: 1.7rem;
+}
+
+
+#studio{
+    padding:0;
+}
+
+#studio .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+ #studio h3{
+    font-size: 3.8rem;
+    font-weight: bold;
+}
+
+.my-studio-card1 .d-flex,
+.my-studio-card2 .d-flex,
+.my-studio-card3 .d-flex,
+.my-studio-card4 .d-flex{
+    flex-direction: row;
+
+}
+
+
+.my-studio-card1{
+    background-color: #C3ABFF;
+}
+
+.my-studio-card2{
+    background-color: white;
+}
+
+.my-studio-card3{
+    background-color: #FED35B;
+}
+
+.my-studio-card4{
+    background-color: #232323;
+}
+
+.my-studio-card4 .my-studio-text{
+    color: white;
+}
+
+.my-studio-img{
+    width: 500px;
+}
+
+.my-studio-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
