@@ -88,7 +88,6 @@ h2{
 
 
 section{
-    height: 100vh;
     padding: 2em;
     margin-top: 3em;
 }
@@ -103,6 +102,10 @@ h1{
 }
 
 
+
+/* SECTION STUDIO  */
+
+
 #studio{
     padding:0;
 }
@@ -113,7 +116,7 @@ h1{
 }
 
 
- #studio h3{
+h3{
     font-size: 3.8rem;
     font-weight: bold;
 }
@@ -156,3 +159,70 @@ h1{
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+.my-studio-text p{
+    font-size: 2rem;
+}
+
+/* SECTION WE ARE  */
+
+#we-are{
+    padding: 0;
+}
+
+
+.we-are-creative,
+.we-are-dpc,
+.we-are-team,
+.we-are-objective{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+}
+
+.we-are-creative,
+.we-are-objective{
+    background-color: #232323;
+    color: white;
+}
+
+.we-are-dpc{
+background-color: #FED35B;
+}
+
+.we-are-team{
+background-color: #C3ABFF;
+}
+
+#we-are p{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+/* PRUEBA FOOTER  */
+
+
+#main {
+    position: relative;
+    z-index: 1;
+    background-color:white;
+    padding: 120px 0 600px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    height: 900px;
+    background-color: #C3ABFF;
+    font-size: 12px;
+    position: relative;
+    z-index: -2;
+    color: white;
+  }
+
