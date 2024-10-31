@@ -218,13 +218,30 @@ background-color: #C3ABFF;
   }
 
   footer {
-    height: 900px;
+    /* height: 900px;
     background-color: #C3ABFF;
     font-size: 12px;
-    position: relative;
-    z-index: -2;
+    position: relative; 
+    z-index: -2; 
     color: white;
+    display: none;
+    transition: opacity 0.5s ease; */
+    position: fixed;
+    bottom: -900px; /* Coloca el footer fuera de la vista */
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #C3ABFF;
+    color: white;
+    text-align: center;
+    transition: bottom 4s ease;
+    margin-top: 3rem;
+    z-index: 0;
   }
+
+  footer.visible {
+    bottom: 0;
+}
 
 
   .top-info{
@@ -232,6 +249,11 @@ background-color: #C3ABFF;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    padding: 3rem;
+  }
+
+  .top-info .nav-link{
+    font-size: 2rem;
   }
 
   .top-info .mail-footer{
@@ -242,4 +264,10 @@ background-color: #C3ABFF;
   .mail-footer-info{
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+    text-align: end;
+  }
+
+  .mail-footer-info h3{
+    font-size: 2rem;
   }
