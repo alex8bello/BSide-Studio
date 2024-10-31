@@ -226,3 +226,20 @@ background-color: #C3ABFF;
     color: white;
   }
 
+
+  .top-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .top-info .mail-footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mail-footer-info{
+    display: flex;
+    flex-direction: column;
+  }
