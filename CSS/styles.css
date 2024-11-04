@@ -201,6 +201,11 @@ background-color: #C3ABFF;
 }
 
 
+.blank{
+    height: 400px;
+}
+
+
 
 
 
@@ -218,19 +223,12 @@ background-color: #C3ABFF;
   }
 
   footer {
-    /* height: 900px;
-    background-color: #C3ABFF;
-    font-size: 12px;
-    position: relative; 
-    z-index: -2; 
-    color: white;
-    display: none;
-    transition: opacity 0.5s ease; */
+    
     position: fixed;
     bottom: -900px; /* Coloca el footer fuera de la vista */
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-color: #C3ABFF;
     color: white;
     text-align: center;
@@ -254,7 +252,9 @@ background-color: #C3ABFF;
 
   .top-info .nav-link{
     font-size: 2rem;
+    text-align: left;
   }
+
 
   .top-info .mail-footer{
     display: flex;
@@ -271,3 +271,33 @@ background-color: #C3ABFF;
   .mail-footer-info h3{
     font-size: 2rem;
   }
+
+
+  .cities{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+
+  }
+
+  .madrid,
+  .barcelona{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .madrid{
+    text-align: left;
+  }
+
+  .barcelona{
+    text-align: end;
+  }
+
+  .madrid h3,
+  .barcelona h3{
+    font-size: 2rem;
+  }
+
+
