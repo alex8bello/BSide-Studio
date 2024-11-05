@@ -69,7 +69,7 @@ h2{
 
 .d-flex{
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .my-home-text{
@@ -99,6 +99,7 @@ h1{
 
 .text-description-about p{
     font-size: 1.7rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -164,6 +165,27 @@ h3{
 .my-studio-text p{
     font-size: 2rem;
 }
+
+.my-studio-card1,
+.my-studio-card2,
+.my-studio-card3,
+.my-studio-card4{
+    height: 150px;
+    overflow: hidden;
+    transition: height 0.75s ease;
+}
+
+.my-studio-card1:hover,
+.my-studio-card2:hover,
+.my-studio-card3:hover,
+.my-studio-card4:hover{
+    height: 500px;
+}
+
+
+
+
+
 
 /* SECTION WE ARE  */
 
@@ -300,4 +322,48 @@ background-color: #C3ABFF;
     font-size: 2rem;
   }
 
+
+  @media screen and (max-width: 750px){
+
+    h2 {
+        font-size: 13vw;
+    }
+
+
+    .text-description-about p {
+        font-size: 1.3rem;
+    }
+
+    .my-studio-text p {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+
+    .my-studio-card1,
+    .my-studio-card2,
+    .my-studio-card3, 
+    .my-studio-card4{
+        height: auto;
+    }
+
+    .top-info,
+    .cities {
+        padding: 1rem;
+    }
+
+    .top-info .nav-link {
+        font-size: 1rem;
+    }
+
+    .mail-footer-info h3,
+    .madrid h3,
+    .barcelona h3 {
+        font-size: 1rem;
+    }
+
+  }
 
