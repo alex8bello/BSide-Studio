@@ -60,19 +60,10 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-
-function verificarAnchoPantalla() {
-    const elemento = document.getElementsByClassName('we-are-creatives');
-    
-    if (window.innerWidth < 750) {
-      elemento.classList.remove('aos-animate'); // Quita la clase si el ancho es menor a 750px
-    } else {
-      elemento.classList.add('aos-animate'); // Añade la clase si el ancho es mayor o igual a 750px
-    }
-  }
-
-  // Ejecutar la función cuando se cargue la página
-  verificarAnchoPantalla();
-
-  // Escuchar el cambio de tamaño de la ventana
-  window.addEventListener('resize', verificarAnchoPantalla);
+ScrollReveal().reveal(".gallery > div", {
+  delay: 200,
+  distance: "50px",
+  interval: 100,
+  origin: "bottom",
+  scale: 0.9,
+});

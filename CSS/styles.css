@@ -322,7 +322,7 @@ background-color: #C3ABFF;
     font-size: 2rem;
   }
 
-/* #PROJECTS */
+/* #PROJECTS____________________________________________________ */
 
 .my-projects-cards{
     width: 300px;
@@ -337,9 +337,21 @@ background-color: #C3ABFF;
     transition: 1s;
 }
 
+.my-projects-logos{
+    opacity: 1;
+    transition: 1s;
+    position: relative;
+}
+
+.my-projects-cards:hover .my-projects-logos{
+    opacity: 0;
+}
+
 .my-projects-text{
     opacity: 0;
     transition: 1s;
+    position: absolute;
+    z-index: 1;
 }
 
 .my-projects-cards:hover .my-projects-text{
@@ -358,10 +370,107 @@ background-color: #C3ABFF;
 
 
 
+/* ______________________________________________________________ */
+.gallery-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* Galería de mosaicos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: dense;
+    grid-auto-rows: 200px;
+    gap: 10px;
+    height: 100%;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+}
+
+.gallery-item:hover{   
+        
+        scale: 1.03;
+        box-shadow:  34px 34px 67px #bfbfbf,
+                 -14px -14px 7px #ffffff;
+        transition: 0.5s;
+}
+
+.gallery-item.large {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #C3ABFF;
+}
+
+.gallery-item.wide {
+    grid-column: span 2;
+    background-color: #FED35B;
+}
+
+.gallery-item.tall {
+    grid-row: span 2;
+    background-color: #232323;
+}
+
+.gallery-item.tall p,
+.gallery-item.tall h3 {
+    color: #e6e6e6;
+}
+
+/* Estilos de las imágenes */
+.gallery-item img {
+    width: 70%;
+}
+
+.overlay {
+    position: absolute;
+    padding: 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.gallery-item:hover img{
+    opacity: 0;
+}
+
+.overlay h3{
+    font-size: 1.4rem;
+}
+
+.overlay p{
+    font-size: 1rem;
+}
 
 
 
 
+
+
+
+
+/* ______________________________________________________________________ */
 
   @media screen and (max-width: 750px){
 
